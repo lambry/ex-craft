@@ -1,0 +1,8 @@
+<section class="block hero {% if block.centerContent %}hero--center{% endif %}" style="background-image: url({{ block.image.one().getUrl('banner') }})">
+    <div class="hero-content">
+        <h2 class="hero-heading">{{ block.heading }}</h2>
+        {% if block.copy %}
+            <div class="hero-copy">{{ block.copy }}</div>
+        {% endif %}
+    </div>
+</section>

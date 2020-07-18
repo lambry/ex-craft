@@ -1,0 +1,15 @@
+{% extends 'layouts/base' %}
+
+{% block title %}{{ entry.title }}{% endblock %}
+
+{% block content %}
+    <h1 class="title">{{ entry.title }}</h1>
+    
+    {% set image = entry.image.one() %}
+    <img src="{{ image.getUrl('banner') }}" class="news-image" alt="{{ entry.title }}" loading="lazy">
+
+    <div class="news-content">
+        <h2 class="news-heading">{{ entry.heading }}</h2>
+        <div class="news-copy">{{ entry.copy }}</div>
+    </div>
+{% endblock %}

@@ -1,0 +1,3 @@
+{% for block in entry.blocks.all() %}
+    {% include 'blocks/' ~ block.type %}
+{% endfor %}

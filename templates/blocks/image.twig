@@ -1,0 +1,12 @@
+<section class="block image {% if block.splitDisplay %}image--split{% endif %}">
+    {% set image = block.image.one() %}
+    <img src="{{ image.getUrl(block.splitDisplay ? 'thumbnail' : 'banner') }}" class="image-image" alt="{{ image.title }}" loading="lazy">
+    <div class="image-content">
+        {% if block.heading %}
+            <h4 class="image-heading">{{ block.heading }}</h4>
+        {% endif %}
+        {% if block.copy %}
+            <div class="image-copy">{{ block.copy }}</div>
+        {% endif %}
+    </div>
+</section>

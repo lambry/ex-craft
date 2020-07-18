@@ -1,0 +1,56 @@
+{% set nav = {
+	about: "About",
+	menu: "Menu",
+	news: "News",
+	contact: "Contact"
+} %}
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    {% block head %}
+        <title>{% block title %}{% endblock %} - {{ siteName }}</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="referrer" content="origin-when-cross-origin" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+        {% set image = site.icon.one() %}
+        {% if image %}
+            <link rel="shortcut icon" href="{{ site.icon.one().getUrl() }}">
+        {% endif %}
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ siteUrl }}assets/css/styles.css" />
+    {% endblock %}
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <li class="nav-home">
+                <a href="{{ siteUrl }}" aria-label="Home">
+                    {% set logo = site.logo.one() %}
+                    {% if logo %}
+                        <img src="{{ logo.getUrl() }}" alt="{{ logo.title }}"/>
+                    {% else %}
+                        Home
+                    {% endif %}
+                </a>
+            </li>
+            {% for slug, text in nav %}
+                <li class="nav-{{ slug }}">
+                    <a href="{{ url(slug) }}" {% if craft.app.request.segments|first == slug %}class="active"{% endif %}>
+                        {{ text }}
+                    </a>
+                </li>
+            {% endfor %}
+        </nav>
+    </header>
+
+    <main class="main">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        &copy; {{ siteName }}.
+    </footer>
+</body>
+</html>

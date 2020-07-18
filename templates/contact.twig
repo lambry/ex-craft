@@ -1,0 +1,28 @@
+{% extends 'layouts/base' %}
+
+{% block title %}{{ entry.title }}{% endblock %}
+
+{% block content %}
+    <h1 class="title">{{ entry.title }}</h1>
+    
+    <div class="locations">
+        {% for location in entry.locations.all() %}
+            <address>
+                <h4>{{ location.heading }}</h4>
+                <p>
+                    <img src="{{ alias('@web/assets/icons/mail.svg') }}" alt="Email">
+                    <strong>{{ location.email }}</strong>
+                </p>
+                <p>
+                    <img src="{{ alias('@web/assets/icons/phone.svg') }}" alt="Phone">
+                    <strong>{{ location.phone }}</strong>
+                </p>
+                <p>
+                    <img src="{{ alias('@web/assets/icons/pin.svg') }}" alt="Address">
+                    <strong>{{ location.address }}</strong>
+                </p>
+            </address>
+        {% endfor %}
+    </div>
+
+{% endblock %}

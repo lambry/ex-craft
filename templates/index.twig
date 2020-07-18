@@ -1,0 +1,9 @@
+{% extends 'layouts/base' %}
+
+{% block title %}{{ site.blurb }}{% endblock %}
+
+{% block content %}
+    <h1 class="title">{{ entry.heading }}</h1>
+    
+    {% include 'blocks/index' %}
+{% endblock %}

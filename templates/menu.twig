@@ -1,0 +1,40 @@
+{% extends 'layouts/base' %}
+
+{% block title %}{{ entry.title }}{% endblock %}
+
+{% block content %}
+    <h1 class="title">{{ entry.title }}</h1>
+
+    <div class="menu">
+        <section class="mains">
+            {% for item in craft.entries.section('menuItems').type('main').all() %}
+                <article class="menu-item">
+                    <h4 class="mains-name">{{ item.title }}</h4>
+                    <strong class="mains-price">${{ item.price }}</strong>
+                    <div class="mains-description">{{ item.copy }}</div>
+                </article>
+            {% endfor %}
+        </section>
+
+        <aside class="aside">
+            <section class="extras">
+                <h3 class="extras-heading">Sides</h3>
+                {% for item in craft.entries.section('menuItems').type('side').all() %}
+                    <article class="menu-item">
+                        <h5 class="extras-name">{{ item.title }}</h5>
+                        <strong class="extras-price">${{ item.price }}</strong>
+                    </article>
+                {% endfor %}
+            </section>
+            <section class="extras">
+                <h3 class="extras-heading">Drinks</h3>
+                {% for item in craft.entries.section('menuItems').type('drink').all() %}
+                    <article class="menu-item">
+                        <h5 class="extras-name">{{ item.title }}</h5>
+                        <strong class="extras-price">${{ item.price }}</strong>
+                    </article>
+                {% endfor %}
+            </section>
+        </aside>
+    </div>
+{% endblock %}
