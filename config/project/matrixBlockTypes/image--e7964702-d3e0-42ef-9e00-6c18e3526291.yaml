@@ -1,0 +1,125 @@
+field: 15818e91-ff58-4743-bbfb-18c0709f771b
+fieldLayouts:
+  d07e2707-0801-412d-ab40-c62346274bf3:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 436ec77e-9508-4149-b053-adf09bb4c421
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 97898916-abf9-4bf7-9cbc-2c8edb586948
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9f81109d-994b-4519-b93a-45547f79ac5a
+            instructions: null
+            label: null
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: dc3e9871-c98a-40dd-8c3a-1af7eef69b53
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  436ec77e-9508-4149-b053-adf09bb4c421:
+    contentColumnType: text
+    fieldGroup: null
+    handle: heading
+    instructions: ''
+    name: Heading
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  97898916-abf9-4bf7-9cbc-2c8edb586948:
+    contentColumnType: string
+    fieldGroup: null
+    handle: copy
+    instructions: ''
+    name: Copy
+    searchable: true
+    settings:
+      errorMessage: 'Component class ''craft\redactor\Field'' belongs to a disabled plugin (Redactor).'
+      expectedType: craft\redactor\Field
+      settings: '{"availableTransforms":"*","availableVolumes":"*","cleanupHtml":true,"columnType":"text","purifierConfig":"","purifyHtml":"1","redactorConfig":"Simple.json","removeEmptyTags":"1","removeInlineStyles":"1","removeNbsp":"1","showUnpermittedFiles":false,"showUnpermittedVolumes":false}'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\MissingField
+  9f81109d-994b-4519-b93a-45547f79ac5a:
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: ''
+    name: Image
+    searchable: true
+    settings:
+      allowSelfRelations: false
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:0b2c024b-0d60-470c-9012-437ccf04d298'
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:0b2c024b-0d60-470c-9012-437ccf04d298'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  dc3e9871-c98a-40dd-8c3a-1af7eef69b53:
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: splitDisplay
+    instructions: ''
+    name: 'Split Display'
+    searchable: true
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+handle: image
+name: Image
+sortOrder: 3

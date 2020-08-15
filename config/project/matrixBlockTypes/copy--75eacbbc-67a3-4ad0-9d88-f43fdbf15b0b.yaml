@@ -1,0 +1,86 @@
+field: 15818e91-ff58-4743-bbfb-18c0709f771b
+fieldLayouts:
+  1d25866a-93bc-46d8-b50a-ca7a094c2688:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 20cbf877-d95c-416d-a918-0102abd1bd49
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a8ee60f6-eade-4415-9217-f4bae11cc758
+            instructions: null
+            label: null
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 89c4b41c-7f7d-4817-8e1a-7a68cb41da9d
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  20cbf877-d95c-416d-a918-0102abd1bd49:
+    contentColumnType: text
+    fieldGroup: null
+    handle: heading
+    instructions: ''
+    name: Heading
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  89c4b41c-7f7d-4817-8e1a-7a68cb41da9d:
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: cardDisplay
+    instructions: ''
+    name: 'Card Display'
+    searchable: true
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  a8ee60f6-eade-4415-9217-f4bae11cc758:
+    contentColumnType: string
+    fieldGroup: null
+    handle: copy
+    instructions: ''
+    name: Copy
+    searchable: true
+    settings:
+      errorMessage: 'Component class ''craft\redactor\Field'' belongs to a disabled plugin (Redactor).'
+      expectedType: craft\redactor\Field
+      settings: '{"availableTransforms":"*","availableVolumes":"*","cleanupHtml":true,"columnType":"text","purifierConfig":"","purifyHtml":"1","redactorConfig":"Simple.json","removeEmptyTags":"1","removeInlineStyles":"1","removeNbsp":"1","showUnpermittedFiles":false,"showUnpermittedVolumes":false}'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\MissingField
+handle: copy
+name: Copy
+sortOrder: 2

@@ -1,0 +1,18 @@
+contentColumnType: string(480)
+fieldGroup: f81377fc-a458-47d8-81aa-a8d66f5e8dda
+handle: heading
+instructions: ''
+name: Heading
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: 120
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

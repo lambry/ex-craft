@@ -1,0 +1,9 @@
+dateModified: 1597471249
+plugins:
+  contact-form:
+    schemaVersion: 1.0.0
+  redactor:
+    enabled: true
+    schemaVersion: 2.3.0
+system:
+  schemaVersion: 3.5.12

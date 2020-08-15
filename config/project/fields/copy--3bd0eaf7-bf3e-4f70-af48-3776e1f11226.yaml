@@ -1,0 +1,13 @@
+contentColumnType: string
+fieldGroup: f81377fc-a458-47d8-81aa-a8d66f5e8dda
+handle: copy
+instructions: ''
+name: Copy
+searchable: true
+settings:
+  errorMessage: 'Component class ''craft\redactor\Field'' belongs to a disabled plugin (Redactor).'
+  expectedType: craft\redactor\Field
+  settings: '{"availableTransforms":"*","availableVolumes":"*","cleanupHtml":true,"columnType":"text","purifierConfig":"","purifyHtml":"1","redactorConfig":"Standard.json","removeEmptyTags":"1","removeInlineStyles":"1","removeNbsp":"1","showUnpermittedFiles":false,"showUnpermittedVolumes":false}'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\MissingField

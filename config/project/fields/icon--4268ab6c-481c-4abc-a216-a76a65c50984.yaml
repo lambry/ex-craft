@@ -1,0 +1,29 @@
+contentColumnType: string
+fieldGroup: e567cc2c-f882-4218-97fd-36b91ebc1e86
+handle: icon
+instructions: ''
+name: Icon
+searchable: true
+settings:
+  allowSelfRelations: false
+  allowedKinds: null
+  defaultUploadLocationSource: 'volume:0b2c024b-0d60-470c-9012-437ccf04d298'
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  restrictFiles: ''
+  selectionLabel: ''
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:0b2c024b-0d60-470c-9012-437ccf04d298'
+  singleUploadLocationSubpath: ''
+  source: null
+  sources: '*'
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

@@ -1,0 +1,9 @@
+baseUrl: $DEFAULT_SITE_URL
+enabled: true
+handle: default
+hasUrls: true
+language: en-AU
+name: 'Ex Craft'
+primary: true
+siteGroup: 92ff5c59-beee-499a-90ce-f50c017f1cb3
+sortOrder: 1

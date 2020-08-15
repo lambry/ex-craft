@@ -1,0 +1,125 @@
+field: 15818e91-ff58-4743-bbfb-18c0709f771b
+fieldLayouts:
+  961a635b-e29d-41bf-b3fe-b2abc83c5890:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 32551a50-fb85-4bd9-a057-c30a3bd9134a
+            instructions: null
+            label: null
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 4b0d1fbe-7984-40ea-bff7-b3aca8d2f888
+            instructions: null
+            label: null
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 13a59735-2615-4a37-8242-61ff7ac5baf3
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 280d44b8-21df-484c-b0c1-5604d474da3d
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  13a59735-2615-4a37-8242-61ff7ac5baf3:
+    contentColumnType: string
+    fieldGroup: null
+    handle: copy
+    instructions: ''
+    name: Copy
+    searchable: true
+    settings:
+      errorMessage: 'Component class ''craft\redactor\Field'' belongs to a disabled plugin (Redactor).'
+      expectedType: craft\redactor\Field
+      settings: '{"availableTransforms":"*","availableVolumes":"*","cleanupHtml":true,"columnType":"text","purifierConfig":"","purifyHtml":"1","redactorConfig":"Simple.json","removeEmptyTags":"1","removeInlineStyles":"1","removeNbsp":"1","showUnpermittedFiles":false,"showUnpermittedVolumes":false}'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\MissingField
+  280d44b8-21df-484c-b0c1-5604d474da3d:
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: centerContent
+    instructions: ''
+    name: 'Center Content'
+    searchable: true
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  32551a50-fb85-4bd9-a057-c30a3bd9134a:
+    contentColumnType: text
+    fieldGroup: null
+    handle: heading
+    instructions: ''
+    name: Heading
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  4b0d1fbe-7984-40ea-bff7-b3aca8d2f888:
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: ''
+    name: Image
+    searchable: true
+    settings:
+      allowSelfRelations: false
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:0b2c024b-0d60-470c-9012-437ccf04d298'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:0b2c024b-0d60-470c-9012-437ccf04d298'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: hero
+name: Hero
+sortOrder: 1

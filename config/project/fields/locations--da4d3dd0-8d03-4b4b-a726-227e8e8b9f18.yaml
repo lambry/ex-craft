@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 8773545c-819f-4257-9e09-37ec8b1a41a7
+handle: locations
+instructions: ''
+name: Locations
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_locations}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
